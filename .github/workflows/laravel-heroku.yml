@@ -34,6 +34,9 @@ jobs:
       - name: Update Composer dependencies
         run: composer update
 
+      - name: Copy .env.example file
+        run: cp .env.example .env
+
       - name: Configure MySQL connection
         run: sed -i 's|DB_HOST=127.0.0.1|DB_HOST=mysql|' .env
 
