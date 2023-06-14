@@ -62,7 +62,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -73,6 +73,6 @@ jobs:
 
       - name: Deploy to Heroku
         env:
-          HEROKU_APP_NAME: thawing-sierra-45371
+          HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
