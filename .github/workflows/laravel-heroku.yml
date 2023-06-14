@@ -38,7 +38,7 @@ jobs:
         run: cp .env.example .env
 
       - name: generate application key
-        run: php artisan:key generate
+        run:  php artisan key:generate
 
       - name: Configure MySQL connection
         run: sed -i 's|DB_HOST=127.0.0.1|DB_HOST=mysql|' .env
