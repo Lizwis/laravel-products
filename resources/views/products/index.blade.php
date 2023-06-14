@@ -21,10 +21,6 @@
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-
-
                                     <add-cart-button :product="{{ $product }}" />
                                 </div>
                                 <small class="text-body-secondary"> R{{ $product->price }}</small>
