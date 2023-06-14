@@ -70,8 +70,8 @@ jobs:
           git init
           git config --global user.email "lsilimela23@gmail.com"
           git config --global user.name "Lizwi"
-          git add composer.lock composer.json
-          git commit -m "Add composer lock"
+           git add .
+          git commit -m "Add files"
 
       - name: Install dpl
         run: gem install dpl
