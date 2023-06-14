@@ -2,7 +2,6 @@
 ## Installation 
 
 - Clone this repository 
-- navigate to the `laravel-api` directory
 - Copy `.env` file: `cp .env.example .env`
 - Set the environment variables in `.env` file
 - Install composer dependencies: `composer install`
