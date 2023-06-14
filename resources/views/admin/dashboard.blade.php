@@ -1,5 +1,4 @@
 @extends('layouts.dasboard')
-
 @section('content')
     <div class="d-flex justify-content-between">
         <div class="col-8">
