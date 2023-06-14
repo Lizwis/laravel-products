@@ -65,7 +65,7 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: latest
+          ruby-version: 3.0
 
       - name: Configure Git
         run: |
